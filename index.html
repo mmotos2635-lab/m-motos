@@ -1,8 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>M&Motos | Taller Mecánico de Motos</title>
 
 <style>
@@ -27,9 +28,9 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(10,10,14,.96);
+  background:rgba(10,10,14,.97);
   border-bottom:1px solid #292936;
-  padding:14px 5%;
+  padding:15px 5%;
 }
 
 .nav{
@@ -42,7 +43,7 @@ header{
 }
 
 .logo{
-  font-size:28px;
+  font-size:30px;
   font-weight:900;
   color:#fff;
 }
@@ -70,7 +71,7 @@ nav a:hover{
   text-align:center;
   padding:80px 20px;
   background:
-    radial-gradient(circle at center,#35124a 0%,#11111a 40%,#08080b 80%);
+  radial-gradient(circle at center,#35124a 0%,#11111a 40%,#08080b 80%);
 }
 
 .hero-content{
@@ -242,4 +243,331 @@ section{
 .contact-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
- 
+  gap:20px;
+}
+
+.contact-box{
+  background:#111118;
+  border:1px solid #292936;
+  border-radius:15px;
+  padding:25px;
+  text-align:center;
+}
+
+.contact-box .icon{
+  font-size:35px;
+}
+
+.contact-box h3{
+  margin-bottom:8px;
+}
+
+.contact-box p{
+  color:#bbb;
+}
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  background:#08080b;
+  border-top:1px solid #292936;
+  color:#888;
+}
+
+footer strong{
+  color:#d946ef;
+}
+
+@media(max-width:700px){
+
+  header{
+    padding:12px 4%;
+  }
+
+  .nav{
+    flex-direction:column;
+  }
+
+  nav a{
+    margin:0 7px;
+    font-size:14px;
+  }
+
+  .hero{
+    min-height:70vh;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-text h2{
+    font-size:32px;
+  }
+
+  section{
+    padding:55px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="logo">
+      M<span>&</span>Motos
+    </div>
+
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#taller">Taller</a>
+      <a href="#venta">Motos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      M<span>&</span>Motos
+    </h1>
+
+    <p>
+      Taller mecánico de motos · Mantenimiento · Preparación · Compra y venta
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#contacto">
+        Contactar
+      </a>
+
+      <a class="btn secondary" href="#servicios">
+        Ver servicios
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="servicios">
+
+  <div class="container">
+
+    <div class="title">
+      <h2>Servicios</h2>
+      <p>Todo lo que necesita tu moto.</p>
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Mantenimiento</h3>
+        <p>
+          Revisiones, aceite, filtros, frenos, transmisión y mantenimiento general.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏍️</div>
+        <h3>Mecánica</h3>
+        <p>
+          Diagnóstico y reparación de averías mecánicas y eléctricas.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Preparación</h3>
+        <p>
+          Ajustes, suspensiones, frenos y preparación de motos para circuito.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Compra y venta</h3>
+        <p>
+          Publicación y gestión de motos para compra y venta.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="taller" class="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <h2>Tu moto, en buenas manos.</h2>
+
+        <p>
+          En M&Motos trabajamos para ofrecer un servicio cercano,
+          profesional y transparente.
+        </p>
+
+        <p>
+          Desde el mantenimiento diario hasta la preparación
+          para circuito, cuidamos cada detalle de tu moto.
+        </p>
+
+        <div class="highlight">
+          <strong>
+            Mantenimiento · Mecánica · Preparación · Compra y venta
+          </strong>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🏁</div>
+
+        <h3>Experiencia y pasión</h3>
+
+        <p>
+          Servicio especializado para pilotos y aficionados
+          al mundo de las motos.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="venta">
+
+  <div class="container">
+
+    <div class="title">
+      <h2>Motos en venta</h2>
+      <p>Próximamente podrás ver nuestras motos disponibles.</p>
+    </div>
+
+    <div class="sales">
+
+      <div class="bike">
+
+        <div class="bike-photo">
+          🏍️
+        </div>
+
+        <div class="bike-info">
+
+          <h3>Moto disponible</h3>
+
+          <p>
+            Información, fotografías y características próximamente.
+          </p>
+
+          <div class="price">
+            Consultar
+          </div>
+
+          <a class="btn" href="#contacto">
+            Consultar
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="bike">
+
+        <div class="bike-photo">
+          🏁
+        </div>
+
+        <div class="bike-info">
+
+          <h3>Moto de ocasión</h3>
+
+          <p>
+            Publicaremos aquí las motos disponibles para venta.
+          </p>
+
+          <div class="price">
+            Consultar
+          </div>
+
+          <a class="btn" href="#contacto">
+            Consultar
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contacto" class="contact">
+
+  <div class="container">
+
+    <div class="title">
+      <h2>Contacto</h2>
+      <p>Contacta con M&Motos.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-box">
+        <div class="icon">📱</div>
+        <h3>WhatsApp</h3>
+        <p>
+          Próximamente añadiremos tu número.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <div class="icon">📍</div>
+        <h3>Taller</h3>
+        <p>
+          Barcelona y alrededores
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <div class="icon">📸</div>
+        <h3>Instagram</h3>
+        <p>
+          @Mayam_63
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  © 2026 <strong>M&Motos</strong> · Taller Mecánico de Motos
+
+</footer>
+
+</body>
+</html>
