@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M&Motos | Taller Mecánico de Motos</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b0b0f;
+  color:#fff;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(10,10,14,.96);
+  border-bottom:1px solid #292936;
+  padding:14px 5%;
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:900;
+  color:#fff;
+}
+
+.logo span{
+  color:#d946ef;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#d946ef;
+}
+
+.hero{
+  min-height:78vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:80px 20px;
+  background:
+    radial-gradient(circle at center,#35124a 0%,#11111a 40%,#08080b 80%);
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.hero h1{
+  font-size:clamp(45px,9vw,90px);
+  line-height:1;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#d946ef;
+}
+
+.hero p{
+  font-size:clamp(18px,3vw,25px);
+  color:#ddd;
+  margin-bottom:35px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  background:#d946ef;
+  color:#fff;
+}
+
+.btn.secondary{
+  background:transparent;
+  border:2px solid #d946ef;
+}
+
+section{
+  padding:70px 5%;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.title h2{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.title p{
+  color:#aaa;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#15151d;
+  border:1px solid #292936;
+  border-radius:15px;
+  padding:28px;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#d946ef;
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:21px;
+}
+
+.card p{
+  color:#aaa;
+}
+
+.about{
+  background:#111118;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about-text h2{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  color:#bbb;
+  margin-bottom:15px;
+}
+
+.highlight{
+  border-left:4px solid #d946ef;
+  padding-left:18px;
+  margin-top:25px;
+}
+
+.sales{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.bike{
+  overflow:hidden;
+  background:#15151d;
+  border:1px solid #292936;
+  border-radius:15px;
+}
+
+.bike-photo{
+  height:210px;
+  background:linear-gradient(135deg,#292936,#111118);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:60px;
+}
+
+.bike-info{
+  padding:22px;
+}
+
+.bike-info h3{
+  margin-bottom:8px;
+}
+
+.price{
+  color:#d946ef;
+  font-size:24px;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.contact{
+  background:#15151d;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ 
