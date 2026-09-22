@@ -97,24 +97,49 @@ nav a:hover{
 }
 
 .hero{
-  min-height:78vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:80px 20px;
-  background:
-  radial-gradient(circle at center,#35124a 0%,#11111a 40%,#08080b 80%);
+    min-height:82vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px 80px;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(180deg,rgba(5,5,7,.35),rgba(5,5,7,.96)),
+        radial-gradient(circle at 50% 30%,rgba(255,102,0,.25),transparent 45%),
+        #070709;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,102,0,.05) 45%,
+        transparent 70%
+    );
+    pointer-events:none;
 }
 
 .hero-content{
-  max-width:900px;
+    position:relative;
+    z-index:2;
+    max-width:950px;
 }
 
+
+
 .hero h1{
-  font-size:clamp(45px,9vw,90px);
-  line-height:1;
-  margin-bottom:20px;
+    font-size:clamp(48px,9vw,92px);
+    line-height:.95;
+    margin-bottom:22px;
+    font-weight:900;
+    letter-spacing:-3px;
+    text-transform:uppercase;
+    text-shadow:0 8px 35px rgba(0,0,0,.55);
 }
 
 .hero h1 span{
@@ -122,10 +147,15 @@ nav a:hover{
 }
 
 .hero p{
-  font-size:clamp(18px,3vw,25px);
-  color:#ddd;
-  margin-bottom:35px;
+    font-size:clamp(17px,2.5vw,22px);
+    color:#c9c9ce;
+    margin:0 auto 38px;
+    max-width:720px;
+    line-height:1.6;
+    font-weight:400;
+    letter-spacing:.3px;
 }
+  
 
 .buttons{
   display:flex;
@@ -134,7 +164,7 @@ nav a:hover{
   gap:15px;
 }
 
-.btn{
+.btn{í⁸⁷⁸
   display:inline-block;
   padding:15px 25px;
   border-radius:10px;
@@ -142,6 +172,34 @@ nav a:hover{
   font-weight:bold;
   background:#ff6600;
   color:#fff;
+}
+  .hero .btn{
+    min-width:180px;
+    padding:16px 28px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:800;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    box-shadow:0 10px 30px rgba(255,102,0,.20);
+}
+
+.hero .btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 35px rgba(255,102,0,.35);
+}
+
+.hero .btn.secondary{
+    background:rgba(255,255,255,.03);
+    border:2px solid #ff6600;
+    color:#fff;
+    box-shadow:none;
+}
+
+.hero .btn.secondary:hover{
+    background:#ff6600;
+    box-shadow:0 14px 35px rgba(255,102,0,.25);
 }
 
   .contact-box .btn{
