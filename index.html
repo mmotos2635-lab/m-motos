@@ -95,6 +95,50 @@ nav a{
 nav a:hover{
   color:#ff6600;
 }
+header{
+  padding:8px 4%;
+}
+
+.nav{
+    gap:10px;
+}
+
+.logo{
+    font-size:52px;
+}
+
+nav a{
+    margin-left:10px;
+    font-size:15px;
+}
+
+@media(max-width:600px){
+    header{
+        padding:8px 12px;
+    }
+
+    .nav{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .logo{
+        font-size:46px;
+        line-height:1;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:18px;
+    }
+
+    nav a{
+        margin-left:0;
+        font-size:15px;
+    }
+}
 
 .hero{
     min-height:82vh;
