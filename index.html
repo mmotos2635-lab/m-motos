@@ -23,6 +23,19 @@
   .bike{
   background:none !important;
   }
+.service-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:20px;
+}
+  .service-list span{
+  display:block;
+  padding:10px 12px;
+  background:rgba(255,255,255,.04);
+  border-left:3px solid #ff6600;
+  border-radius:6px;
+  }
   .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -530,9 +543,16 @@ footer strong{
       <div class="card">
   <div class="icon">🔧</div>
   <h3>Servicios</h3>
-  <p>
-    Mantenimiento · Mecánica general · Diagnosis · Reprogramación · Preparación para circuito · Neumáticos · Tapicería · Pintura y rotulación
-  </p>
+  <div class="service-list">
+  <span>✓ Mantenimiento</span>
+  <span>✓ Mecánica general</span>
+  <span>✓ Diagnosis</span>
+  <span>✓ Reprogramación</span>
+  <span>✓ Preparación circuito</span>
+  <span>✓ Neumáticos</span>
+  <span>✓ Tapicería</span>
+  <span>✓ Pintura y rotulación</span>
+  </div>
 </div>
 
 <div class="card">
